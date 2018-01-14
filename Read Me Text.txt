@@ -1,0 +1,24 @@
+The Code implementation is done using tcl scripting.
+And the results are tested using NS2 simulator.
+
+The comments to the code implementation are as below:
+We have made changes in the code implementationin the below lines:
+
+Line numbers 111-298	: Creation of 24 nodes and node location values are set.
+Line numbers 301-330	: Diffie hilman algorithm implementation for public and private key generation and sharing,key distribution and monitor mode technique implementation
+Line numbers 579-830	: Creation of traffice and setting packet size and time interval
+Line numbers 832-1167	: Sending and receiving of public key and data transmission in the assigned time intervals.
+
+We have to execute the below commands in the terminal pointing to the code:
+
+ns code.tcl
+nam solution.nam
+
+To generate xgraphs for the below parameters:
+
+exec xgraph new-AODV-delay.tr  -p -P
+exec xgraph new-AODV-packetloss.tr -p -P
+exec xgraph new-AODV-throughput.tr -p -P
+exec xgraph old-AODV-packet-loss.tr new-AODV-packet-loss.tr -p -P
+exec xgraph new-AODV-throughput.tr old-AODV-throughput.tr -p -P
+
