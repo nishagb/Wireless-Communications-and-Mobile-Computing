@@ -1,5 +1,3 @@
-The Code implementation is done using tcl scripting.
-And the results are tested using NS2 simulator.
 
 The comments to the code implementation are as below:
 We have made changes in the code implementationin the below lines:
